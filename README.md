@@ -104,9 +104,15 @@ Opcjonalna modyfikacja normalnych powierzchni za pomocą mapy wektorów normalny
   - Tylko wypełnienie
   - Siatka + wypełnienie
 - 🌈 **Źródło światła**:
+  - Typ: stałe / ruchome po spirali / reflektor (spotlight)
   - Animacja ruchu po spirali na płaszczyźnie `z = const`
   - Suwak pozycji `z`
+  - Dla reflektora:
+    - Pozycja i kierunek
+    - Kąt stożka padania
 - 🧭 **Modyfikacja wektora normalnego** (checkbox): aktywacja mapy normalnych
+- 🌊 **Efekt falowania powierzchni**:
+  - Checkbox: włącz/wyłącz
 
 ## 📦 Możliwe rozszerzenia
 
@@ -117,11 +123,20 @@ Opcjonalna modyfikacja normalnych powierzchni za pomocą mapy wektorów normalny
 - 🔧 Dynamiczne generowanie powierzchni Béziera przez użytkownika
 - 📸 Zrzut ekranu i eksport sceny do pliku graficznego
 
+## 🧪 Zrealizowane rozszerzenia
+
+- 🌊 **Efekt falowania powierzchni** – dynamiczna modyfikacja współrzędnej `z` na podstawie funkcji sinusoidalnej czasu i/lub pozycji
+- 💡 **Reflektor (spotlight)** jako źródło światła – symulacja światła kierunkowego z ograniczonym stożkiem padania
+
 ## 👤 Autor
 
 Projekt stworzony przez **Mikołaj Karbowski**  
 w ramach przedmiotu **Grafika Komputerowa**  
 na **Politechnice Warszawskiej**, semestr zimowy 2024/2025
+
+## 📜 Licencja
+
+MIT License
 
 
 
