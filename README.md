@@ -64,6 +64,64 @@ Plik tekstowy zawierający 16 linii – każda odpowiada jednemu punktowi kontro
 ## 💡 Model oświetlenia
 
 Wzór oparty na modelu Lamberta + Phonga:
+I = kd * IL * IO * cos(N, L) + ks * IL * IO * (cos(V, R))^m
+
+Gdzie:
+- `kd`, `ks` – współczynniki rozproszenia i odbicia zwierciadlanego (od 0 do 1)
+- `IL` – kolor światła (domyślnie biały)
+- `IO` – kolor obiektu (stały lub z tekstury)
+- `N`, `L`, `V`, `R` – znormalizowane wektory
+- `m` – współczynnik połysku (1–100)
+
+> Ujemne wartości cosinusów są przycinane do zera.
+
+---
+
+## 🗺️ Mapowanie normalnych (Normal Mapping)
+
+Opcjonalna modyfikacja normalnych powierzchni za pomocą mapy wektorów normalnych:
+
+- Kolor pikseli z tekstury normalnej (RGB) przekształcany na wektor:
+  - Przykład: `RGB(127,127,255)` → `N = [0,0,1]`
+- Wektor modyfikowany macierzą M = `[Pu Pv N]` w celu dopasowania do powierzchni
+
+> Współrzędne tekstury (`u, v`) skalowane do przedziału [0, 1]
+
+## 🎛️ Sterowanie (GUI)
+
+- 🎚️ **Dokładność siatki** – suwak
+- 🔁 **Obrót powierzchni**:
+  - Kąt α (wokół osi Z) – suwak w zakresie od -45° do 45°
+  - Kąt β (wokół osi X) – suwak w zakresie od 0° do 10°
+- 💡 **Parametry oświetlenia**:
+  - `kd`, `ks` – suwaki (0.0 – 1.0)
+  - `m` – suwak połysku (1 – 100)
+- 🎨 **Kolor obiektu**:
+  - Radiobutton: stały kolor lub tekstura
+- 🖼️ **Wczytywanie tekstur i map normalnych** z plików graficznych
+- ✅ **Tryby wyświetlania**:
+  - Tylko siatka
+  - Tylko wypełnienie
+  - Siatka + wypełnienie
+- 🌈 **Źródło światła**:
+  - Animacja ruchu po spirali na płaszczyźnie `z = const`
+  - Suwak pozycji `z`
+- 🧭 **Modyfikacja wektora normalnego** (checkbox): aktywacja mapy normalnych
+
+## 📦 Możliwe rozszerzenia
+
+- 💾 Eksport powierzchni do formatu `.obj`
+- 🧮 Implementacja cieniowania per-pixel (np. Phong lub Gouraud)
+- 🖱️ Obsługa sterowania kamerą: obrót, zoom, przesuwanie (myszą lub klawiszami)
+- 💡 Obsługa różnych typów źródeł światła (np. punktowe, kierunkowe, spotlight)
+- 🔧 Dynamiczne generowanie powierzchni Béziera przez użytkownika
+- 📸 Zrzut ekranu i eksport sceny do pliku graficznego
+
+## 👤 Autor
+
+Projekt stworzony przez **Mikołaj Karbowski**  
+w ramach przedmiotu **Grafika Komputerowa**  
+na **Politechnice Warszawskiej**, semestr zimowy 2024/2025
 
 
 
