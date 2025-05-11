@@ -19,6 +19,9 @@ Aplikacja desktopowa do renderowania i wizualizacji powierzchni Béziera 3. stop
 
 ---
 
+![Widok programu](Images/Zrzut ekranu 2025-05-11 094418.png)
+![Widok programu](Zrzut ekranu 2025-05-11 094936.png)
+
 ## 📄 Format pliku wejściowego
 
 Plik tekstowy zawierający 16 linii – każda odpowiada jednemu punktowi kontrolnemu powierzchni Béziera. Każda linia zawiera 3 liczby zmiennoprzecinkowe:
