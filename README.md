@@ -19,8 +19,8 @@ Aplikacja desktopowa do renderowania i wizualizacji powierzchni Béziera 3. stop
 
 ---
 
-![Widok programu](Images/Zrzut ekranu 2025-05-11 094418.png)
-![Widok programu](Zrzut ekranu 2025-05-11 094936.png)
+![Widok programu](Images/Zrzut%20ekranu%202025-05-11%20094418.png)
+![Widok programu](Images/Zrzut%20ekranu%202025-05-11%20094936.png)
 
 ## 📄 Format pliku wejściowego
 
